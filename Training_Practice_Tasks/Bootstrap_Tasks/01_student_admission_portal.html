@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Admission Portal</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;color:#222;background:#f4f6fb}
+    img{max-width:100%} a{color:inherit} .wrap{max-width:1100px;margin:35px auto;padding:20px}
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary"><div class="container"><a class="navbar-brand" href="#">ABC College</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button><div id="nav" class="collapse navbar-collapse"><div class="navbar-nav ms-auto"><a class="nav-link active" href="#">Home</a><a class="nav-link" href="#form">Admission</a><a class="nav-link" href="#contact">Contact</a></div></div></div></nav>
+<main class="container my-5"><div class="p-4 p-md-5 mb-4 bg-light rounded-3"><h1>Student Admission 2026–27</h1><p class="lead">Apply online to begin your journey with ABC College.</p><a class="btn btn-primary" href="#form">Apply Now</a></div>
+<div class="row g-4"><div class="col-lg-8"><div class="card shadow-sm" id="form"><div class="card-header bg-primary text-white">Admission Form</div><div class="card-body"><form onsubmit="event.preventDefault();alert('Application submitted successfully!')">
+<div class="row g-3"><div class="col-md-6"><label class="form-label">Full Name</label><input class="form-control" required placeholder="Enter full name"></div><div class="col-md-6"><label class="form-label">Email</label><input type="email" class="form-control" required placeholder="name@example.com"></div>
+<div class="col-md-6"><label class="form-label">Phone</label><input type="tel" class="form-control" required placeholder="Mobile number"></div><div class="col-md-6"><label class="form-label">Date of Birth</label><input type="date" class="form-control" required></div>
+<div class="col-md-6"><label class="form-label">Course</label><select class="form-select" required><option value="">Choose course</option><option>BCA</option><option>B.Sc Computer Science</option><option>BBA</option><option>BA</option></select></div><div class="col-md-6"><label class="form-label">Gender</label><select class="form-select"><option>Select</option><option>Female</option><option>Male</option><option>Other</option></select></div>
+<div class="col-12"><label class="form-label">Address</label><textarea class="form-control" rows="2" placeholder="Enter address"></textarea></div><div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" required id="agree"><label class="form-check-label" for="agree">I confirm that the information is correct.</label></div></div><div class="col-12"><button class="btn btn-primary">Submit Application</button> <button type="reset" class="btn btn-outline-secondary">Reset</button></div></div></form></div></div></div>
+<div class="col-lg-4"><div class="card"><div class="card-body"><h5>Why choose us?</h5><p><span class="badge bg-success">Admissions Open</span></p><ul><li>Experienced faculty</li><li>Modern laboratories</li><li>Placement support</li></ul></div></div></div></div></main>
+<footer id="contact" class="bg-dark text-white text-center p-3">ABC College · Contact: admissions@example.com</footer>
+
+</body>
+</html>

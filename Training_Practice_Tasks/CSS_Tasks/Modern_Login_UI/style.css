@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: linear-gradient(135deg, #33246f, #8e6be8);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.auth {
+    width: min(430px, 92%);
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 20px 60px #160d3b55;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.intro h1 {
+    color: #33246f;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #777;
+    font-size: 14px;
+}
+
+.auth label {
+    display: block;
+    margin: 14px 0 6px;
+    font-size: 14px;
+}
+
+.auth input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.auth input:focus {
+    outline: 2px solid #8e6be8;
+    border-color: transparent;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.options .remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+}
+
+.options input {
+    margin: 0;
+}
+
+.auth a {
+    color: #6948c8;
+    text-decoration: none;
+}
+
+.auth a:hover {
+    text-decoration: underline;
+}
+
+.auth button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    background: #6948c8;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.auth button:hover {
+    background: #49309c;
+    transform: translateY(-2px);
+}
+
+.center {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+@media (max-width: 480px) {
+    .auth {
+        padding: 25px 20px;
+    }
+
+    .options {
+        font-size: 12px;
+    }
+}

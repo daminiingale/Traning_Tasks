@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creative Pricing Plans</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="wrap">
+
+        <!-- Header Section -->
+        <header class="center">
+            <p class="heading-label">PRICING</p>
+
+            <h1>Choose Your Plan</h1>
+
+            <p>Simple plans for every stage of your journey.</p>
+        </header>
+
+
+        <!-- Pricing Plans -->
+        <div class="plans">
+
+            <!-- Basic Plan -->
+            <article class="plan-card">
+
+                <div class="plan-icon">🌱</div>
+
+                <h2>Basic</h2>
+
+                <h3>₹0 <small>/ month</small></h3>
+
+                <p class="plan-description">For getting started</p>
+
+                <hr>
+
+                <ul>
+                    <li>✓ 1 Project</li>
+                    <li>✓ Basic Support</li>
+                    <li>✓ Community Access</li>
+                </ul>
+
+                <button onclick="selectPlan('Basic')">
+                    Get Started
+                </button>
+
+            </article>
+
+
+            <!-- Pro Plan -->
+            <article class="plan-card featured">
+
+                <span class="tag">⭐ MOST POPULAR</span>
+
+                <div class="plan-icon">🚀</div>
+
+                <h2>Pro</h2>
+
+                <h3>₹499 <small>/ month</small></h3>
+
+                <p class="plan-description">For growing teams</p>
+
+                <hr>
+
+                <ul>
+                    <li>✓ 10 Projects</li>
+                    <li>✓ Priority Support</li>
+                    <li>✓ Advanced Tools</li>
+                </ul>
+
+                <button onclick="selectPlan('Pro')">
+                    Choose Pro
+                </button>
+
+            </article>
+
+
+            <!-- Premium Plan -->
+            <article class="plan-card">
+
+                <div class="plan-icon">💎</div>
+
+                <h2>Premium</h2>
+
+                <h3>₹999 <small>/ month</small></h3>
+
+                <p class="plan-description">For professionals</p>
+
+                <hr>
+
+                <ul>
+                    <li>✓ Unlimited Projects</li>
+                    <li>✓ 24/7 Support</li>
+                    <li>✓ All Features</li>
+                </ul>
+
+                <button onclick="selectPlan('Premium')">
+                    Choose Premium
+                </button>
+
+            </article>
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Creative Pricing Plans. All Rights Reserved.</p>
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script>
+        function selectPlan(planName) {
+            alert("Thank you for choosing the " + planName + " plan!");
+        }
+    </script>
+
+</body>
+</html>

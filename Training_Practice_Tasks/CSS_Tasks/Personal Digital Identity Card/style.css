@@ -1,0 +1,211 @@
+
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #493b75);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* Profile Card */
+
+.profile-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Card Header */
+
+.card-header {
+    background: linear-gradient(135deg, #5145cd, #a56bff);
+    height: 150px;
+    position: relative;
+}
+
+/* Profile Image */
+
+.profile-image {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: #fff;
+    border: 6px solid white;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5145cd;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Card Content */
+
+.card-content {
+    padding: 75px 30px 30px;
+}
+
+.card-content h1 {
+    font-size: 27px;
+    color: #252047;
+    margin-bottom: 10px;
+}
+
+/* Designation */
+
+.designation {
+    color: #7357d5;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+/* Description */
+
+.description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Details */
+
+.details {
+    background: #f5f3ff;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.details p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.details strong {
+    color: #5145cd;
+}
+
+/* Skills */
+
+.skills h3 {
+    color: #252047;
+    margin-bottom: 15px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 25px;
+}
+
+.skill-list span {
+    background: #eeeaff;
+    color: #5145cd;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Social Links */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    text-decoration: none;
+    background: #5145cd;
+    color: white;
+    padding: 10px 17px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #29205f;
+    transform: scale(1.05);
+}
+
+/* Contact Button */
+
+.contact-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #5145cd, #a56bff);
+    color: white;
+    text-decoration: none;
+    padding: 13px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #29205f;
+}
+
+/* Footer */
+
+.card-footer {
+    background: #f5f3ff;
+    padding: 15px;
+    color: #777;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+
+@media(max-width: 450px) {
+
+    .card-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-content h1 {
+        font-size: 23px;
+    }
+
+    .social-links {
+        gap: 7px;
+    }
+
+    .social-links a {
+        padding: 9px 12px;
+    }
+}

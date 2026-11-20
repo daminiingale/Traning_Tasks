@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest Registration</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎉 ABC College Fest 2026 🎉</h1>
+        <h3>Celebrate Talent, Creativity & Friendship!</h3>
+        <p>Join us for an exciting celebration filled with fun, music, dance and competitions.</p>
+        <hr>
+    </header>
+
+    <main>
+
+        <h2>📝 Student Registration Form</h2>
+        <p>Fill in the details below to register for the college fest.</p>
+
+        <form onsubmit="event.preventDefault(); alert('Registration Successful! 🎉')">
+
+            <fieldset>
+                <legend><h3>👤 Personal Information</h3></legend>
+
+                <label>Full Name:</label><br>
+                <input type="text" placeholder="Enter your full name" required>
+                <br><br>
+
+                <label>Email Address:</label><br>
+                <input type="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <label>Mobile Number:</label><br>
+                <input type="tel" placeholder="Enter mobile number" pattern="[0-9]{10}" required>
+                <br><br>
+
+                <label>Date of Birth:</label><br>
+                <input type="date" required>
+                <br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+                <br><br>
+
+                <label>College Name:</label><br>
+                <input type="text" placeholder="Enter college name" required>
+                <br><br>
+
+                <label>Select Course:</label><br>
+                <select required>
+                    <option value="">-- Select Course --</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Mechanical Engineering</option>
+                    <option>Civil Engineering</option>
+                    <option>Commerce</option>
+                </select>
+                <br><br>
+
+                <label>Year of Study:</label><br>
+                <select required>
+                    <option value="">-- Select Year --</option>
+                    <option>First Year</option>
+                    <option>Second Year</option>
+                    <option>Third Year</option>
+                    <option>Final Year</option>
+                </select>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><h3>🎭 Select Your Events</h3></legend>
+
+                <p>Choose the events in which you want to participate:</p>
+
+                <input type="checkbox" name="event" value="Coding"> 💻 Coding Competition
+                <br>
+
+                <input type="checkbox" name="event" value="Dance"> 💃 Dance Competition
+                <br>
+
+                <input type="checkbox" name="event" value="Singing"> 🎤 Singing Competition
+                <br>
+
+                <input type="checkbox" name="event" value="Sports"> ⚽ Sports Competition
+                <br>
+
+                <input type="checkbox" name="event" value="Photography"> 📸 Photography
+                <br>
+
+                <input type="checkbox" name="event" value="Drawing"> 🎨 Drawing Competition
+                <br><br>
+
+                <label>Preferred Event Date:</label><br>
+                <input type="date" required>
+                <br><br>
+
+                <label>Preferred Time:</label><br>
+                <input type="time">
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><h3>📍 Additional Information</h3></legend>
+
+                <label>Why do you want to participate?</label><br>
+                <textarea rows="4" cols="40" placeholder="Write something about yourself..."></textarea>
+                <br><br>
+
+                <label>Upload Your College ID:</label><br>
+                <input type="file" accept="image/*,.pdf">
+                <br><br>
+
+                <input type="checkbox" required>
+                I agree to follow all college fest rules and regulations.
+
+            </fieldset>
+
+            <br>
+
+            <center>
+                <button type="submit">🎉 Submit Registration</button>
+                <button type="reset">Clear Form</button>
+            </center>
+
+        </form>
+
+        <hr>
+
+        <section>
+            <h2>🌟 Fest Highlights</h2>
+            <ul>
+                <li>Live Music and Dance Performances</li>
+                <li>Technical Coding Competition</li>
+                <li>Sports and Fun Activities</li>
+                <li>Photography and Art Competition</li>
+                <li>Exciting Prizes and Certificates</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <center>
+            <h3>🎊 ABC College Fest 2026 🎊</h3>
+            <p>Where Talent Meets Opportunity!</p>
+            <p>Contact: abcfest@gmail.com</p>
+            <p>© 2026 ABC College. All Rights Reserved.</p>
+        </center>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Timeline and Progress Tracker</title>
+<style>
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;color:#222;background:#f4f6fb}
+    img{max-width:100%} a{color:inherit} .wrap{max-width:1100px;margin:35px auto;padding:20px}
+    .timeline{max-width:700px;margin:35px auto;border-left:3px solid #7564e8;padding-left:28px}.timeline article{position:relative;background:white;margin:0 0 25px;padding:20px;border-radius:12px;box-shadow:0 5px 20px #0001;animation:appear .7s both}.dot{position:absolute;left:-39px;top:25px;width:18px;height:18px;background:#7564e8;border:4px solid #e5e1ff;border-radius:50%}.timeline small{color:#7564e8;font-weight:bold}.bar{height:9px;background:#e9e8f3;border-radius:9px;margin:12px 0}.bar i{display:block;height:100%;background:#7564e8;border-radius:9px;animation:fill 1.5s}.timeline b{font-size:12px;color:#555}@keyframes fill{from{width:0}}@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}</style>
+</head>
+<body>
+
+<main class="wrap"><h1>My Learning Journey</h1><p>A simple timeline of milestones and progress.</p><div class="timeline"><article><span class="dot"></span><small>January 2026</small><h3>HTML Fundamentals</h3><p>Learned page structure, forms and semantic tags.</p><div class="bar"><i style="width:100%"></i></div><b>100% complete</b></article><article><span class="dot"></span><small>March 2026</small><h3>CSS Styling</h3><p>Practised layouts, Flexbox, Grid and responsive design.</p><div class="bar"><i style="width:85%"></i></div><b>85% complete</b></article><article><span class="dot"></span><small>June 2026</small><h3>JavaScript Basics</h3><p>Working with variables, functions and DOM events.</p><div class="bar"><i style="width:60%"></i></div><b>60% complete</b></article></div></main>
+</body>
+</html>

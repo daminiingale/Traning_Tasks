@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Examination Portal</title>
+<style>
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;color:#222;background:#f4f6fb}
+    img{max-width:100%} a{color:inherit} .wrap{max-width:1100px;margin:35px auto;padding:20px}
+    body{font-family:Arial,sans-serif;margin:25px;line-height:1.6;color:#222}header,footer{background:#e9efff;padding:20px}main{max-width:900px;margin:25px auto}section,article,form{margin:20px 0;padding:18px;border:1px solid #ddd;border-radius:8px}label{display:inline-block;margin:5px}input,select,textarea{padding:7px;margin:4px}button{padding:10px 18px;cursor:pointer}</style>
+</head>
+<body>
+<header><h1>Online Examination Portal</h1><p>Read the instructions and answer all questions.</p></header><main><section><h2>Student Details</h2><label>Name: <input type="text" required></label> <label>Roll number: <input type="text" required></label></section><section><h2>Instructions</h2><ul><li>Read every question carefully.</li><li>Select one answer for each question.</li><li>Click submit when finished.</li></ul></section><form onsubmit="event.preventDefault();alert('Your answers have been submitted!')"><fieldset><legend>Q1. Which language runs in a web browser?</legend><label><input type="radio" name="q1" required> Java</label><br><label><input type="radio" name="q1"> JavaScript</label><br><label><input type="radio" name="q1"> C</label></fieldset><fieldset><legend>Q2. Which tag creates a hyperlink in HTML?</legend><label><input type="radio" name="q2" required> &lt;link&gt;</label><br><label><input type="radio" name="q2"> &lt;a&gt;</label><br><label><input type="radio" name="q2"> &lt;href&gt;</label></fieldset><fieldset><legend>Q3. Select CSS technologies.</legend><label><input type="checkbox"> Flexbox</label><label><input type="checkbox"> Grid</label><label><input type="checkbox"> SQL</label></fieldset><button>Submit Exam</button></form></main>
+</body>
+</html>
